@@ -38,13 +38,13 @@ puts "Press ENTER to play the round."
 gets
 
 clear
-computer_move = moves[rand(1..3)-1]
+computer_move = moves[rand(0..2)]
 result_msg = ""
 check1 = "   "
 check2 = "   "
 if player_move === computer_move
   # Tie case
-  result_msg = "TIE"
+  result_msg = "🟰 Tie."
 else
   # Winner case
   result = case player_move + "--" + computer_move
@@ -83,5 +83,7 @@ puts check1 +player_move.capitalize + " (you)"
 puts "    vs."
 puts check2 +computer_move.capitalize + " (computer)"
 puts ""
+
+# add play again option if a tie.
 
 exit
