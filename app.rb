@@ -32,7 +32,6 @@ clear
 puts "You chose #{player_move.capitalize}"
 puts ""
 # need to add validation
-
 wait
 puts "Press ENTER to play the round."
 gets
